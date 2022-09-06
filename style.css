@@ -1,0 +1,143 @@
+body {
+    background-color: #657fa7;
+    background: radial-gradient(circle, rgba(166,70,142,1) 28%, rgba(24,99,185,1) 79%);
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    height: max-content;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 70px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 30px;
+    background: transparent;
+    color: rgb(237, 205, 241);
+}
+
+.question{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;   
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    width: 90%;
+    opacity: 0;
+}
+
+label {
+    font-size: 20px;
+    padding: 10px 0 10px;
+    font-weight: 500;
+}
+
+
+img{
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: rgba(166,70,142,1);
+    color: rgb(237, 205, 241);
+    border: 1px solid rgba(24,99,185,1);
+    border-radius: 50px;
+    padding: 10px 20px; 
+    font-size: 20px;    
+    align-self: center;
+    margin-top: 15px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+    
+}
+
+.btn {
+	animation: jittery 4s infinite;
+}
+.btn:hover {
+		animation: heartbeat 0.3s 3;
+}
+
+@keyframes jittery {
+	5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	15% {
+		transform: scale(1.15);
+	}
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}
+
+@keyframes heartbeat {
+	50% {
+		transform: scale(1.1);
+	}
+}
+
+
+
+#result {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    align-self: center;
+    font-size:  18px;
+    font-family: 'Lora', serif;
+    color: #fff;
+    width: 60%;
+    text-align: center;
+}
+
+
+
+@media all and (max-width: 800px) {
+    .question {
+        margin-left: 0px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    form {
+        margin: 0px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .question {
+        margin: 0px;
+        padding-left: 17px;
+    }
+}
+
+

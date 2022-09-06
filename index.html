@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на знания ПДД</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <div class="question first">
+            <label>Вопрос 1/7. <br>
+                При движении на легковом автомобиле, оборудованном ремнями безопасности, должны быть пристегнуты:</label>
+                <span><input class="firstInput" type="radio" name="question1" id="q1_a1">Только водитель</span>
+                <span><input class="firstInput" type="radio" name="question1" id="q1_a2">Водитель и пассажир на переднем сиденье</span>
+                <span><input class="firstInput" type="radio" name="question1" id="answer1">Все лица, находящиеся в автомобиле</span>
+        </div>
+        <div class="question second">
+            <label>Вопрос 2/7.  <br>
+                Разрешено ли Вам поставить автомобиль на стоянку в этом месте?</label>
+            <img src="вопрос2.jpeg" alt="question2">
+                <span><input type="radio" name="question2" id="answer2">Разрешено</span>
+                <span><input type="radio" name="question2" id="q2_a2">Разрешено, если Вы проживаете рядом с этим местом</span>
+                <span><input type="radio" name="question2" id="q2_a3">Запрещено</span>
+        </div>
+        <div class="question third">
+            <label>Вопрос 3/7. <br>
+                Что означает мигание желтого сигнала светофора?</label>
+                <span><input type="radio" name="question3" id="q3_a1">Предупреждает о неисправности светофора</span>
+                <span><input type="radio" name="question3" id="answer3">Разрешает движение и информирует о наличии нерегулируемого перекрестка или пешеходного перехода</span>
+                <span><input type="radio" name="question3" id="q3_a3">Запрещает дальнейшее движение</span>
+        </div>
+        <div class="question fourth">
+            <label>Вопрос 4/7.  <br>
+                В каком случае Вы обязаны уступить дорогу пешеходам?</label>
+            <img src="вопрос4.jpeg" alt="question4">
+                <span><input type="radio" name="question4" id="q4_a1">Только при повороте налево </span>
+                <span><input type="radio" name="question4" id="q4_a2">Только при повороте направо </span>
+                <span><input type="radio" name="question4" id="answer4">В обоих случаях </span>
+        </div>
+        <div class="question fifth">
+            <label>Вопрос 5/7.  <br>
+                Где начинают действовать требования Правил, относящиеся к населенным пунктам?</label> 
+                <span><input type="radio" name="question5" id="answer5"> Только с места установки дорожного знака «Начало населенного пункта» на белом фоне.</span>
+                <span><input type="radio" name="question5" id="q5_a2">С места установки дорожного знака с названием населенного пункта на белом или синем фоне.</span>
+                <span><input type="radio" name="question5" id="q5_a3">В начале застроенной территории, непосредственно прилегающей к дороге.</span>
+        </div>
+        <div class="question sixth">
+            <label>Вопрос 6/7.  <br>
+                Что следует сделать водителю, чтобы предотвратить возникновение заноса при проезде крутого поворота?</label> 
+                <span><input type="radio" name="question6" id="q6_a1">Перед поворотом снизить скорость и выжать педаль сцепления, чтобы дать возможность автомобилю двигаться накатом на повороте.</span>
+                <span><input type="radio" name="question6" id="answer6">Перед поворотом снизить скорость, при необходимости включить пониженную передачу, а при проезде поворота не увеличивать резко скорость и не тормозить.</span>
+                <span><input type="radio" name="question6" id="q6_a3">Допускаются любые из перечисленных действий.</span>
+        </div>
+        <div class="question seventh">
+            <label>Вопрос 7/7.  <br>
+                При повороте налево Вы:</label>
+            <img src="вопрос7.jpeg" alt="question7">
+                <span><input type="radio" name="question7" id="answer7">Должны уступить дорогу обоим транспортным средствам.</span>
+                <span><input type="radio" name="question7" id="q7_a2">Должны уступить дорогу только легковому автомобилю.</span>
+                <span><input type="radio" name="question7" id="q7_a3">Имеете право проехать перекресток первым.</span>
+        </div>
+        <br>
+        <button type="submit" class="btn">Результат</button>
+        <p id="result"></p>
+    
+        </form>  
+
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
