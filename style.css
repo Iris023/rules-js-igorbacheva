@@ -63,10 +63,10 @@ img{
     
 }
 
-.btn {
-	animation: jittery 4s infinite;
+.animated_btn {
+	animation: jittery 3s infinite;
 }
-.btn:hover {
+.animated_btn:hover {
 		animation: heartbeat 0.3s 3;
 }
 

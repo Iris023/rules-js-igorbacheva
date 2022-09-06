@@ -80,6 +80,7 @@ button.addEventListener('click', result);
 
 function result(e){
     e.preventDefault();
+    button.classList.remove('animated_btn');
     let points = 0;
     if (document.querySelector('#answer1').checked){
         points++;
